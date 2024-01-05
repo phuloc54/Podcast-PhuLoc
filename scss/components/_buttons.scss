@@ -1,0 +1,16 @@
+@use "../abstracts/colors" as col;
+
+.btn {
+  display: inline-block;
+  min-width: 157px;
+  padding: 18px 16px;
+  border-radius: 8px;
+  background: col.$heading-color;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

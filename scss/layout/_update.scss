@@ -1,0 +1,65 @@
+@use "../abstracts/colors" as col;
+
+.update {
+  &-wrapper {
+    position: relative;
+    padding: 100px;
+    background: col.$heading-color;
+    border-radius: 12px;
+  }
+
+  &-title {
+    position: relative;
+    color: #fff;
+    z-index: 1;
+  }
+
+  &-desc {
+    color: #aba6b5;
+    // line-height: 1.75;
+  }
+
+  &-icon-title {
+    position: absolute;
+    top: 185px;
+    left: 100px;
+  }
+
+  &-form {
+    margin-top: 70px;
+  }
+
+  &-input-email,
+  &-input-name {
+    padding: 18px 28px;
+    width: 100%;
+    height: 64px;
+    border-radius: 8px;
+    color: #fff;
+    background: #2b213f;
+  }
+
+  &-cta {
+    margin-left: 15px;
+    background: col.$primary-color;
+  }
+
+  &-green-star, &-orange-star, &-purple-star {
+    position: absolute;
+  }
+
+  &-green-star {
+    top: 26px;
+    left: 528px;
+  }
+
+  &-orange-star {
+    top: 180px;
+    right: 27px;
+  }
+
+  &-purple-star {
+    bottom: 45px;
+    left: 35px;
+  }
+}

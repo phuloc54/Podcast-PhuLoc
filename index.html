@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 07</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- GG font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="row header-row">
+          <!-- Logo -->
+          <a href="/"><img src="./assets/icons/logo.svg" alt="" class="logo" /></a>
+
+          <!-- Navigation -->
+          <nav class="nav">
+            <ul class="nav__menu">
+              <li class="nav__item">
+                <a title="Episodes" href="#!" class="nav__item__link desc-2">Episodes</a>
+              </li>
+              <li class="nav__item">
+                <a title="Trending" href="#!" class="nav__item__link desc-2">Trending</a>
+              </li>
+              <li class="nav__item">
+                <a title="Category" href="#!" class="nav__item__link desc-2">Category</a>
+              </li>
+              <li class="nav__item">
+                <a title="Blog" href="#!" class="nav__item__link desc-2">Blog</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Actions -->
+          <div class="header__actions">
+            <a href="#!" class="header__sign-in button-2">Sign in</a>
+            <a href="#!" class="header__sign-up button-2 btn">Sign up</a>
+          </div>
+        </div>
+
+        <!-- Hero -->
+        <section class="hero">
+          <div class="row">
+            <div class="col-lg-3">
+              <article class="hero-media-1">
+                <div class="hero-media-wrapper">
+                  <img src="./assets/img/hero-img-1.png" alt="" class="hero__img-1" />
+
+                  <img src="./assets/icons/hero-label-1.svg" alt="" class="hero-label-1" />
+                </div>
+
+                <p class="hero-media-desc">Podcast listener</p>
+                <div class="hero-listener-list">
+                  <div class="hero-listener">
+                    <img
+                      src="https://mighty.tools/mockmind-api/content/human/44.jpg"
+                      alt=""
+                      class="listener-avt" />
+                  </div>
+                  <div class="hero-listener">
+                    <img
+                      src="https://mighty.tools/mockmind-api/content/human/5.jpg"
+                      alt=""
+                      class="listener-avt" />
+                  </div>
+                  <div class="hero-listener">
+                    <img
+                      src="https://mighty.tools/mockmind-api/content/human/68.jpg"
+                      alt=""
+                      class="listener-avt" />
+                  </div>
+                  <div class="hero-more-lis">+50k</div>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-3">
+              <div class="hero-media-2">
+                <img src="./assets/img/hero-img-2.png" alt="" class="hero__img-2" />
+
+                <div class="hero-author">
+                  <p class="hero-author-name">Sarah Taylor</p>
+                  <p class="hero-author-song">Song podcaster</p>
+                </div>
+
+                <div class="hero-socials">
+                  <img src="./assets/icons/hero-icon-1.svg" alt="" class="hero-social-icon" />
+                  <img src="./assets/icons/hero-icon-2.svg" alt="" class="hero-social-icon" />
+                  <img src="./assets/icons/hero-icon-3.svg" alt="" class="hero-social-icon" />
+                </div>
+
+                <img src="./assets/icons/hero-line-1.svg" alt="" class="hero-podcast-line1" />
+                <img src="./assets/icons/hero-line-2.svg" alt="" class="hero-podcast-line2" />
+
+                <img src="./assets/icons/hero-label-2.svg" alt="" class="hero-podcast-label" />
+              </div>
+            </div>
+            <section class="col-lg-5 offset-lg-1">
+              <section class="hero-content">
+                <h1 class="heading-1 hero__title">A new era of podcasting for you</h1>
+                <p class="desc-1 hero__desc">
+                  Rebuilt for simplicity and speed, so you can spend more time discovering and
+                  listening to great podcasts.
+                </p>
+                <div class="hero-actions">
+                  <button class="hero__started btn">Get Started</button>
+                  <a href="#!" class="hero-cta">
+                    <p href="" class="hero__listen button-1">Listen now</p>
+                    <img src="./assets/icons/hero-icon-listen.svg" alt="" class="hero-cta__icon" />
+                  </a>
+                </div>
+                <img src="./assets/icons/hero-content-icon.svg" alt="" class="hero-content-icon" />
+              </section>
+            </section>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main>
+      <!-- PADCAST -->
+      <section class="padcast">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+              <!-- Padcast left -->
+              <section class="padcast-content">
+                <h2 class="heading-2 padcast-title">We are in the top padcast directories</h2>
+                <p class="desc-2 padcast-desc">
+                  Rebuilt for simplicity and speed, so you can spend more time discovering and
+                  listening to great podcasts. We are everywhere on the internet.
+                </p>
+                <button class="padcast-cta btn">
+                  <span href="#!" class="padcast-cta-desc">Listen now</span>
+                  <img src="assets/icons/padcast-listen-icon.svg" alt="" />
+                </button>
+
+                <img
+                  src="./assets/icons/padcast-icon-title.svg"
+                  alt=""
+                  class="padcast-icon-title" />
+              </section>
+            </div>
+            <div class="col lg-6 offset-lg-1">
+              <!-- Padcast right -->
+              <div class="padcast-socials">
+                <div class="padcast-icon-list">
+                  <img src="./assets/icons/padcast-icon-1.svg" alt="" class="padcast-icon" />
+                  <img src="./assets/icons/padcast-icon-2.svg" alt="" class="padcast-icon" />
+                  <img src="./assets/icons/padcast-icon-3.svg" alt="" class="padcast-icon" />
+                  <img src="./assets/icons/padcast-icon-4.svg" alt="" class="padcast-icon" />
+                  <img src="./assets/icons/padcast-icon-5.svg" alt="" class="padcast-icon" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORY -->
+      <section class="category">
+        <div class="container">
+          <section class="category-row">
+            <h2 class="heading-2 category-title">Listen by category</h2>
+            <p class="desc-2 category-desc">
+              Listen all kind of podcasts you like by exploring categories. Make your day even
+              better
+            </p>
+            <img src="./assets/icons/category-icon.svg" alt="" class="category-icon-title" />
+          </section>
+
+          <div class="category-list">
+            <!-- Item 1 -->
+
+            <article class="category-item">
+              <a href="#!">
+                <img src="./assets/img/category-1.png" alt="" class="category-thumb" />
+                <div class="category-label">
+                  <div class="category-item-row">
+                    <h3 class="category-label-title button-1">Education</h3>
+                    <img
+                      src="./assets//icons/category-label-icon.svg"
+                      alt=""
+                      class="category-label-icon" />
+                  </div>
+                  <p class="category-label-desc desc-3">120 Podcasts Channel</p>
+                </div>
+              </a>
+            </article>
+
+            <!-- Item 2 -->
+            <article class="category-item">
+              <a href="#!">
+                <img src="./assets/img/category-2.png" alt="" class="category-thumb" />
+                <div class="category-label">
+                  <div class="category-item-row">
+                    <h3 class="category-label-title button-1">Healthcare</h3>
+                    <img
+                      src="./assets//icons/category-label-icon.svg"
+                      alt=""
+                      class="category-label-icon" />
+                  </div>
+                  <p class="category-label-desc desc-3">120 Podcasts Channel</p>
+                </div>
+              </a>
+            </article>
+
+            <!-- Item 3 -->
+
+            <article class="category-item">
+              <a href="#!">
+                <img src="./assets/img/category-3.png" alt="" class="category-thumb" />
+                <div class="category-label">
+                  <div class="category-item-row">
+                    <h3 class="category-label-title button-1">Music</h3>
+                    <img
+                      src="./assets//icons/category-label-icon.svg"
+                      alt=""
+                      class="category-label-icon" />
+                  </div>
+                  <p class="category-label-desc desc-3">120 Podcasts Channel</p>
+                </div>
+              </a>
+            </article>
+
+            <!-- Item 4 -->
+            <article class="category-item">
+              <a href="#!">
+                <img src="./assets/img/category-4.png" alt="" class="category-thumb" />
+                <div class="category-label">
+                  <div class="category-item-row">
+                    <h3 class="category-label-title button-1">Fashion</h3>
+                    <img
+                      src="./assets//icons/category-label-icon.svg"
+                      alt=""
+                      class="category-label-icon" />
+                  </div>
+                  <p class="category-label-desc desc-3">120 Podcasts Channel</p>
+                </div>
+              </a>
+            </article>
+
+            <!-- Item 5 -->
+            <article class="category-item">
+              <a href="#!">
+                <img src="./assets/img/category-5.png" alt="" class="category-thumb" />
+                <div class="category-label">
+                  <div class="category-item-row">
+                    <h3 class="category-label-title button-1">Comedy</h3>
+                    <img
+                      src="./assets//icons/category-label-icon.svg"
+                      alt=""
+                      class="category-label-icon" />
+                  </div>
+                  <p class="category-label-desc desc-3">120 Podcasts Channel</p>
+                </div>
+              </a>
+            </article>
+          </div>
+
+          <!-- Action -->
+          <button class="category-cta btn">All category</button>
+        </div>
+      </section>
+
+      <!-- Popular -->
+      <section class="popular">
+        <div class="container">
+          <section class="popular-row">
+            <h2 class="heading-2 popular-title">Our most popular episodes</h2>
+            <img src="./assets/icons/popular-icon-title.svg" alt="" class="popular-icon-title" />
+            <button class="btn popular-cta">All episodes</button>
+          </section>
+
+          <!-- Popular list -->
+          <div class="popular-list">
+            <div class="row popular-item-row">
+              <!-- First row -->
+
+              <!-- Item 1 -->
+              <div class="col-lg-3">
+                <a href="#!"
+                  ><img src="./assets/img/pop-1.png" alt="" class="popular-item-thumb"
+                /></a>
+              </div>
+              <div class="col-lg-3">
+                <p class="popular-item-chapter desc-3">Episode3 - 1hr 25min</p>
+                <h3>
+                  <a href="#!" class="heading-3 popular-item-title"
+                    >Should you get outboard audio gear?</a
+                  >
+                </h3>
+                <p class="desc-2 popular-item-desc">
+                  Is hardware really worth it when it comes to podcasting? The answer is...it
+                  depends.
+                </p>
+                <a href="#!" class="popular-listen-link">
+                  <span class="popular-listen-desc button-3">Listen now</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none">
+                    <circle cx="7" cy="7" r="7" fill="" />
+                    <path
+                      d="M9.85 6.9134C9.91667 6.95189 9.91667 7.04811 9.85 7.0866L5.65 9.51147C5.58333 9.54996 5.5 9.50185 5.5 9.42487V4.57513C5.5 4.49815 5.58333 4.45004 5.65 4.48853L9.85 6.9134Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="col-lg-3">
+                <a href="#!"
+                  ><img src="./assets/img/pop-2.png" alt="" class="popular-item-thumb"
+                /></a>
+              </div>
+              <div class="col-lg-3">
+                <p class="popular-item-chapter desc-3">Episode3 - 1hr 25min</p>
+                <h3>
+                  <a href="#!" class="heading-3 popular-item-title"
+                    >Should you get outboard audio gear?</a
+                  >
+                </h3>
+                <p class="desc-2 popular-item-desc">
+                  Is hardware really worth it when it comes to podcasting? The answer is...it
+                  depends.
+                </p>
+                <a href="#!" class="popular-listen-link">
+                  <span class="popular-listen-desc button-3">Listen now</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none">
+                    <circle cx="7" cy="7" r="7" fill="" />
+                    <path
+                      d="M9.85 6.9134C9.91667 6.95189 9.91667 7.04811 9.85 7.0866L5.65 9.51147C5.58333 9.54996 5.5 9.50185 5.5 9.42487V4.57513C5.5 4.49815 5.58333 4.45004 5.65 4.48853L9.85 6.9134Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row popular-item-row">
+            <!-- Second row -->
+
+            <!-- Item 1 -->
+            <div class="col-lg-3">
+              <p class="popular-item-chapter desc-3">Episode3 - 1hr 25min</p>
+              <h3>
+                <a href="#!" class="heading-3 popular-item-title"
+                  >Should you get outboard audio gear?</a
+                >
+              </h3>
+              <p class="desc-2 popular-item-desc">
+                Is hardware really worth it when it comes to podcasting? The answer is...it depends.
+              </p>
+              <a href="#!" class="popular-listen-link">
+                <span class="popular-listen-desc button-3">Listen now</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none">
+                  <circle cx="7" cy="7" r="7" fill="" />
+                  <path
+                    d="M9.85 6.9134C9.91667 6.95189 9.91667 7.04811 9.85 7.0866L5.65 9.51147C5.58333 9.54996 5.5 9.50185 5.5 9.42487V4.57513C5.5 4.49815 5.58333 4.45004 5.65 4.48853L9.85 6.9134Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </div>
+            <div class="col-lg-3">
+              <a href="#!"
+                ><img src="./assets/img/pop-3.png" alt="" class="popular-item-thumb"
+              /></a>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="col-lg-3">
+              <p class="popular-item-chapter desc-3">Episode3 - 1hr 25min</p>
+              <h3>
+                <a href="#!" class="heading-3 popular-item-title"
+                  >Should you get outboard audio gear?</a
+                >
+              </h3>
+              <p class="desc-2 popular-item-desc">
+                Is hardware really worth it when it comes to podcasting? The answer is...it depends.
+              </p>
+              <a href="#!" class="popular-listen-link">
+                <span class="popular-listen-desc button-3">Listen now</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none">
+                  <circle cx="7" cy="7" r="7" fill="" />
+                  <path
+                    d="M9.85 6.9134C9.91667 6.95189 9.91667 7.04811 9.85 7.0866L5.65 9.51147C5.58333 9.54996 5.5 9.50185 5.5 9.42487V4.57513C5.5 4.49815 5.58333 4.45004 5.65 4.48853L9.85 6.9134Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </div>
+            <div class="col-lg-3">
+              <a href="#!"
+                ><img src="./assets/img/pop-4.png" alt="" class="popular-item-thumb"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Listener -->
+      <section class="listen">
+        <div class="container">
+          <div class="listen-list">
+            <!-- Item 1 -->
+            <article class="row listen-item">
+              <!-- Left -->
+              <div class="col-lg-6">
+                <div class="listen-media">
+                  <img src="./assets/img/listen-1.png" alt="" class="listen-img-small" />
+                  <img src="./assets/img/listen-2.png" alt="" class="listen-img-big" />
+                  <div class="listen-dots">
+                    <div class="listen-dot"></div>
+                    <div class="listen-dot"></div>
+                    <div class="listen-dot active"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Right -->
+              <div class="col-lg-5 offset-lg-1">
+                <section class="listen-content">
+                  <h2 class="heading-2 listen-title">What our listeners saying about us</h2>
+                  <p class="desc-2 listen-desc">
+                    Whoa whoa, let me take some notes! A wealth of audio knowledge. Every episode is
+                    a gem! I’ve upped my game considerably since I started listening. Really a
+                    wonderful platofrm for podcasts.
+                  </p>
+                  <p class="listen-author desc-3">Scott Adams</p>
+                  <img src="./assets/icons/listen-icon-1.svg" alt="" class="listen-icon-1" />
+                  <img src="./assets/icons/listen-icon-2.svg" alt="" class="listen-icon-2" />
+                </section>
+              </div>
+            </article>
+
+            <!-- Item 2 -->
+            <article class="row listen-item">
+              <!-- Left -->
+              <div class="col-lg-6">
+                <div class="listen-media">
+                  <img src="./assets/img/listen-1.png" alt="" class="listen-img-small" />
+                  <img src="./assets/img/listen-2.png" alt="" class="listen-img-big" />
+                  <div class="listen-dots">
+                    <div class="listen-dot"></div>
+                    <div class="listen-dot"></div>
+                    <div class="listen-dot active"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Right -->
+              <div class="col-lg-5 offset-lg-1">
+                <section class="listen-content">
+                  <h2 class="heading-2 listen-title">What our listeners saying about us</h2>
+                  <p class="desc-2 listen-desc">
+                    Whoa whoa, let me take some notes! A wealth of audio knowledge. Every episode is
+                    a gem! I’ve upped my game considerably since I started listening. Really a
+                    wonderful platofrm for podcasts.
+                  </p>
+                  <p class="listen-author desc-3">Scott Adams</p>
+                  <img src="./assets/icons/listen-icon-1.svg" alt="" class="listen-icon-1" />
+                  <img src="./assets/icons/listen-icon-2.svg" alt="" class="listen-icon-2" />
+                </section>
+              </div>
+            </article>
+
+            <!-- Item 3 -->
+            <article class="row listen-item">
+              <!-- Left -->
+              <div class="col-lg-6">
+                <div class="listen-media">
+                  <img src="./assets/img/listen-1.png" alt="" class="listen-img-small" />
+                  <img src="./assets/img/listen-2.png" alt="" class="listen-img-big" />
+                  <div class="listen-dots">
+                    <div class="listen-dot"></div>
+                    <div class="listen-dot"></div>
+                    <div class="listen-dot active"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Right -->
+              <div class="col-lg-5 offset-lg-1">
+                <section class="listen-content">
+                  <h2 class="heading-2 listen-title">What our listeners saying about us</h2>
+                  <p class="desc-2 listen-desc">
+                    Whoa whoa, let me take some notes! A wealth of audio knowledge. Every episode is
+                    a gem! I’ve upped my game considerably since I started listening. Really a
+                    wonderful platofrm for podcasts.
+                  </p>
+                  <p class="listen-author desc-3">Scott Adams</p>
+                  <img src="./assets/icons/listen-icon-1.svg" alt="" class="listen-icon-1" />
+                  <img src="./assets/icons/listen-icon-2.svg" alt="" class="listen-icon-2" />
+                </section>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Update -->
+      <section class="update">
+        <div class="container">
+          <div class="update-wrapper">
+            <!-- First row update -->
+            <div class="row">
+              <div class="col-lg-5">
+                <h2 class="heading-2 update-title">Subscribe and get update regularly</h2>
+                <img src="./assets/icons/update-icon-title.svg" alt="" class="update-icon-title" />
+              </div>
+              <div class="col-lg-5 offset-lg-1">
+                <p class="desc-2 update-desc">
+                  Rebuilt for simplicity and speed, so you can spend more time discovering and
+                  listening to great podcasts. Get all the updates of latest podcasts.
+                </p>
+              </div>
+            </div>
+
+            <!-- Second row update -->
+            <form action="#!" class="update-form">
+              <div class="row">
+                <div class="col-lg-4">
+                  <input
+                    class="update-input-name"
+                    type="text"
+                    name="username"
+                    id=""
+                    placeholder="Your name" />
+                </div>
+                <div class="col-lg-4">
+                  <input
+                    class="update-input-email"
+                    type="email"
+                    name="email"
+                    id=""
+                    placeholder="Your email address" />
+                </div>
+
+                <button class="btn update-cta">Subscribe</button>
+              </div>
+            </form>
+
+            <img src="./assets/icons/update-green-star.svg" alt="" class="update-green-star" />
+            <img src="./assets/icons/update-orange-star.svg" alt="" class="update-orange-star" />
+            <img src="./assets/icons/update-purple-star.svg" alt="" class="update-purple-star" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="container">
+         <div class="footer-wrapper">
+            <div class="footer-left">
+              <img src="./assets/icons/logo.svg" alt="" class="logo" />
+              <p class="footer-copyright desc-2">Copyright © 2022 UIHUT all rights reserved.</p>
+              <div class="footer-social-list">
+                <a href="#!" class="footer-social-icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#!" class="footer-social-icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="#!" class="footer-social-icon">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+  
+            <ul class="footer-menu">
+              <!-- Sub menu 1 -->
+              <ul class="footer-sub-menu">
+                <h3 class="footer-menu-title heading-3">Linkes</h3>
+                <li class="footer-menu-item">
+                  <a title="Home" href="#!" class="footer-menu-link desc-2">Home</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a title="Episodes" href="#!" class="footer-menu-link desc-2">Episodes</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a title="Trending" href="#!" class="footer-menu-link desc-2">Trending</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a title="Category" href="#!" class="footer-menu-link desc-2">Category</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a title="Blog" href="#!" class="footer-menu-link desc-2">Blog</a>
+                </li>
+              </ul>
+  
+              <!-- Sub menu 2 -->
+              <ul class="footer-sub-menu">
+                <h3 class="footer-menu-title heading-3">Features</h3>
+                <li class="footer-menu-item">
+                  <a title="Style guide" href="#!" class="footer-menu-link desc-2">Style guide</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a title="Instructions" href="#!" class="footer-menu-link desc-2">Instructions</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a title="Catelog" href="#!" class="footer-menu-link desc-2">Catelog</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a title="Your podcast" href="#!" class="footer-menu-link desc-2">Your podcast</a>
+                </li>
+         
+              </ul>
+  
+              <!-- Sub menu 3 -->
+              <ul class="footer-sub-menu">
+                <h3 class="footer-menu-title heading-3">Company</h3>
+                <li class="footer-menu-item">
+                  <a title="Privacy" href="#!" class="footer-menu-link desc-2">Privacy</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a title="Terms" href="#!" class="footer-menu-link desc-2">Terms</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a title="Security" href="#!" class="footer-menu-link desc-2">Security</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a title="Cookies" href="#!" class="footer-menu-link desc-2">Cookies</a>
+                </li>
+              </ul>
+            </ul>
+  
+            <div class="footer-listen">
+              <h3 class="footer-listen-title heading-3">Listen on</h3>
+              <div class="footer-listen-apps">
+                <img src="./assets/icons/footer-ic-1.svg" alt="">
+                <img src="./assets/icons/footer-ic-2.svg" alt="">
+                <img src="./assets/icons/footer-ic-3.svg" alt="">
+                <img src="./assets/icons/footer-ic-4.svg" alt="">
+                <img src="./assets/icons/footer-ic-5.svg" alt="">
+              </div>
+            </div>
+         </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

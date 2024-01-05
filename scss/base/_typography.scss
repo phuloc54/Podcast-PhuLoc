@@ -1,0 +1,74 @@
+@use "../abstracts/colors" as col;
+
+%fw-700 {
+  font-weight: 700;
+}
+
+%fw-600 {
+  font-weight: 600;
+}
+
+%fw-400 {
+  font-weight: 400;
+}
+
+.heading-1 {
+  @extend %fw-700;
+  color: col.$heading-color;
+  font-size: 7rem;
+  line-height: 1.14;
+}
+
+.heading-2 {
+  @extend %fw-700;
+  color: col.$heading-color;
+  font-size: 4.2rem;
+  line-height: 1.23;
+}
+
+.heading-3 {
+  @extend %fw-700;
+  color: col.$heading-color;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.button-1 {
+  @extend %fw-600;
+  color: col.$button-color;
+  font-size: 1.8rem;
+  line-height: 1.66; /* 166.667% */
+}
+
+.button-2 {
+  @extend %fw-600;
+  color: col.$button-color;
+  line-height: 1.75; /* 175% */
+}
+.button-3 {
+  @extend %fw-600;
+  color: col.$button-color;
+  font-size: 1.4rem;
+  line-height: 1.71; /* 171.429% */
+}
+
+.desc-1 {
+  @extend %fw-400;
+  color: col.$desc-color;
+  font-size: 1.8rem;
+  line-height: 1.667; /* 166.667% */
+}
+
+.desc-2 {
+  @extend %fw-400;
+  color: col.$desc-color;
+  font-size: 16px;
+  line-height: 1.75; /* 175% */
+}
+
+.desc-3 {
+  @extend %fw-400;
+  color: col.$desc-color;
+  font-size: 14px;
+  line-height: 1.71; /* 171.429% */
+}

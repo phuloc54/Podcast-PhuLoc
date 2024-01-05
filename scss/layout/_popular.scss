@@ -1,0 +1,89 @@
+@use "../abstracts/colors" as col;
+.popular {
+  padding: 100px 0;
+  background: col.$bg-color;
+
+  &-row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-title {
+    position: relative;
+    max-width: 390px;
+    z-index: 1;
+  }
+
+  &-icon-title {
+    position: absolute;
+    top: 40px;
+    left: 202px;
+  }
+
+  &-list {
+    margin-top: 84px;
+  }
+
+  &-item-row {
+    align-items: center;
+  }
+
+  &-item-row:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  &-item-thumb {
+    width: 100%;
+    height: 286px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: all 0.25s linear;
+
+    &:hover {
+      scale: 1.1;
+    }
+  }
+
+  &-item-chapter {
+    color: #fd6f1f;
+  }
+
+  &-item-title {
+    max-width: 270px;
+    margin-top: 6px;
+  }
+
+  &-item-desc {
+    max-width: 270px;
+    margin-top: 18px;
+  }
+
+  &-listen-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 11px;
+    transition: all 0.2s linear;
+
+    :hover {
+      color: col.$primary-color;
+      text-shadow: 1px 0 0 col.$primary-color;
+    }
+
+    svg {
+      color: col.$heading-color;
+      fill: currentColor;
+      transition: all 0.2s linear;
+    }
+  }
+
+  &-listen-link:hover svg {
+    color: col.$primary-color;
+  }
+
+  &-listen-desc {
+    color: col.$heading-color;
+  }
+}

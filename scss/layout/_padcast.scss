@@ -1,0 +1,86 @@
+@use "../abstracts/colors" as col;
+.padcast {
+  padding: 160px 0 80px;
+
+  &-content {
+    position: relative;
+  }
+
+  &-title {
+    position: relative;
+    max-width: 470px;
+    z-index: 1;
+  }
+
+  &-desc {
+    max-width: 470px;
+    margin-top: 18px;
+  }
+
+  &-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    margin-top: 38px;
+    background: col.$primary-color;
+  }
+
+  &-icon-listen {
+    color: white;
+  }
+
+  &-icon-title {
+    position: absolute;
+    top: 77px;
+    left: 173px;
+  }
+
+  &-socials {
+    position: relative;
+    height: 400px;
+  }
+
+  &-socials::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    display: block;
+    width: 287px;
+    height: 287px;
+    border-radius: 287px;
+    opacity: 0.4;
+    background: #ff9051;
+    filter: blur(129px);
+  }
+
+  &-icon {
+    position: absolute;
+  }
+
+  &-icon-list &-icon:nth-child(1) {
+    top: 164px;
+  }
+
+  &-icon-list &-icon:nth-child(2) {
+    top: 0;
+    left: 185px;
+  }
+
+  &-icon-list &-icon:nth-child(3) {
+    top: 59px;
+    right: 0;
+  }
+
+  &-icon-list &-icon:nth-child(4) {
+    right: 48px;
+    bottom: 40px;
+  }
+
+  &-icon-list &-icon:nth-child(5) {
+    bottom: 0;
+    left: 169px;
+  }
+}

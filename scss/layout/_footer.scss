@@ -1,0 +1,95 @@
+@use "../abstracts/colors" as col;
+
+.footer {
+  padding: 100px 0 38px;
+  background: col.$bg-color;
+
+  &-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &-left {
+    max-width: 270px;
+  }
+
+  &-copyright {
+    margin-top: 14px;
+  }
+
+  &-social-list {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+  }
+
+  &-social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #000;
+    transition: all 0.2s linear;
+
+    i {
+      color: #fff;
+      background: col.$heading-color;
+      border-radius: inherit;
+      transition: all 0.2s linear;
+    }
+    &:hover {
+      background: col.$primary-color;
+    }
+
+    &:hover i {
+      background: col.$primary-color;
+    }
+  }
+
+  &-menu {
+    display: flex;
+    column-gap: 90px;
+    margin-left: 116px;
+    // background: red;
+  }
+
+  &-menu-title {
+    margin-bottom: 24px;
+  }
+
+  &-menu-item {
+    margin-top: 16px;
+  }
+
+  &-menu-link {
+    padding: 10px 0;
+    transition: all 0.2s linear;
+
+    &::before {
+      content: attr(title);
+      display: block;
+      font-weight: 600;
+      height: 0;
+      visibility: hidden;
+    }
+
+    &:hover {
+      font-weight: 600;
+    }
+  }
+
+  &-listen {
+    margin-left: 90px;
+  }
+
+  &-listen-apps {
+    margin-top: 24px;
+
+    img:not(:first-child) {
+      margin-left: 16px;
+    }
+  }
+}

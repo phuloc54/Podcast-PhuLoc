@@ -1,0 +1,97 @@
+@use "../abstracts/colors" as col;
+
+.listen {
+  padding: 168px 0 160px;
+
+  &-img-big,
+  &-img-small {
+    border-radius: 8px;
+  }
+
+  &-img-small {
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    transform: translateY(-50%);
+    height: 284px;
+    object-fit: cover;
+  }
+
+  &-img-big {
+    margin-left: 200px;
+    width: 66.67%;
+    height: 444px;
+    object-fit: cover;
+  }
+
+  &-list {
+    display: flex;
+    overflow: hidden;
+    column-gap: 30px;
+  }
+
+  &-item {
+    width: 100%;
+    flex-shrink: 0;
+    align-items: center;
+  }
+
+  &-title,
+  &-desc {
+    position: relative;
+    max-width: 470px;
+    z-index: 1;
+  }
+
+  &-desc {
+    margin-top: 38px;
+  }
+
+  &-author {
+    margin-top: 18px;
+    color: #aba6b5;
+  }
+
+  &-content {
+    position: relative;
+  }
+
+  &-icon-1,
+  &-icon-2 {
+    position: absolute;
+  }
+
+  &-icon-1 {
+    top: -40px;
+  }
+
+  &-icon-2 {
+    top: 32px;
+    right: 150px;
+  }
+
+  &-media {
+    position: relative;
+  }
+
+  &-dots {
+    position: absolute;
+    left: 74px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  &-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #aaa;
+    &.active {
+      width: 10px;
+      height: 10px;
+      background: col.$primary-color;
+    }
+  }
+}
